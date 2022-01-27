@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         nameEditTextView = findViewById(R.id.name_view)
         nameText = findViewById(R.id.nameText)
         saveButton = findViewById(R.id.saveBtn)
+        saveButton.text = "Update"
 
         saveButton.setOnClickListener {
             if (nameEditTextView.text.isNotBlank())
